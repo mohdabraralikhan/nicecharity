@@ -5249,7 +5249,6 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* input {
-  border: none;
-} */
-
+.pointer{
+  cursor: pointer;
+}
