@@ -1,0 +1,5255 @@
+/* Element */
+/* Author: Abrar */
+/* mail: mohdabraralikhan@gmail.com */
+/* Getting started with atomic design */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.flx {
+  display: flex;
+  box-sizing: border-box;
+}
+.wrap{
+    flex-wrap: wrap;
+
+}
+.flx-col {
+  flex-direction: column;
+}
+.flx-row {
+  flex-direction: row;
+}
+
+.gap-1 {
+  gap: 2px;
+}
+
+.gap-2 {
+  gap: 4px;
+}
+
+.gap-3 {
+  gap: 8px;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+.gap-5 {
+  gap: 32px;
+}
+
+.gap-6 {
+  gap: 64px;
+}
+
+.gap-7 {
+  gap: 128px;
+}
+
+.gap-8 {
+  gap: 256px;
+}
+
+.gap-9 {
+  gap: 512px;
+}
+
+.gap-10 {
+  gap: 1024px;
+}
+
+.align-content-normal {
+  align-content: normal;
+}
+
+.align-content-stretch {
+  align-content: stretch;
+}
+
+.align-content-center {
+  align-content: center;
+}
+
+.align-content-start {
+  align-content: start;
+}
+
+.align-content-end {
+  align-content: end;
+}
+
+.align-content-flex-start {
+  align-content: flex-start;
+}
+
+.align-content-flex-end {
+  align-content: flex-end;
+}
+
+.align-content-space-around {
+  align-content: space-around;
+}
+
+.align-content-space-evenly {
+  align-content: space-evenly;
+}
+
+.align-content-space-between {
+  align-content: space-between;
+}
+
+.align-content-baseline {
+  align-content: baseline;
+}
+
+.align-self-normal {
+  align-self: normal;
+}
+
+.align-self-stretch {
+  align-self: stretch;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-start {
+  align-self: start;
+}
+
+.align-self-end {
+  align-self: end;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-space-around {
+  align-self: space-around;
+}
+
+.align-self-space-evenly {
+  align-self: space-evenly;
+}
+
+.align-self-space-between {
+  align-self: space-between;
+}
+
+.align-self-baseline {
+  align-self: baseline;
+}
+
+.justify-self-normal {
+  justify-self: normal;
+}
+
+.justify-self-stretch {
+  justify-self: stretch;
+}
+
+.justify-self-center {
+  justify-self: center;
+}
+
+.justify-self-start {
+  justify-self: start;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+.justify-self-flex-start {
+  justify-self: flex-start;
+}
+
+.justify-self-flex-end {
+  justify-self: flex-end;
+}
+
+.justify-self-space-around {
+  justify-self: space-around;
+}
+
+.justify-self-space-evenly {
+  justify-self: space-evenly;
+}
+
+.justify-self-space-between {
+  justify-self: space-between;
+}
+
+.justify-self-baseline {
+  justify-self: baseline;
+}
+
+.align-items-stretch {
+  align-items: stretch;
+}
+
+.align-items-flex-start {
+  align-items: flex-start;
+}
+
+.align-items-flex-end {
+  align-items: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-baseline {
+  align-items: baseline;
+}
+
+.col-1 { flex: 1;}
+
+.col-2 {flex: 2;}
+
+.col-3 {flex: 3;}
+
+.col-4 {flex: 4;}
+
+.col-5 {flex: 5;}
+
+.col-6 {flex: 6;}
+
+.col-7 {flex: 7;}
+
+.col-8 {flex: 8;}
+
+.col-9 {flex: 9;}
+
+.col-10 {flex: 10;}
+
+.col-11 { flex: 11;}
+
+.col-12 {flex: 12;}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-content-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-items-normal {
+  justify-content: normal;
+}
+
+.justify-items-stretch {
+  justify-content: stretch;
+}
+
+.justify-items-center {
+  justify-content: center;
+}
+
+.justify-items-start {
+  justify-content: start;
+}
+
+.justify-items-end {
+  justify-content: end;
+}
+
+.justify-items-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-items-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-items-self-start {
+  justify-content: self-start;
+}
+
+.justify-items-self-end {
+  justify-content: self-end;
+}
+
+.justify-items-left {
+  justify-content: left;
+}
+
+.justify-items-right {
+  justify-content: right;
+}
+
+.justify-items-baseline {
+  justify-content: baseline;
+}
+
+@media only screen and (max-width: 576px) {
+  .flx > .col {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .flx > .col {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .flx > .col {
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .flx > .col {
+    max-width: 12.5%;
+    flex-basis: 12.5%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .flx > .col {
+    max-width: 8.33%;
+    flex-basis: 8.33%;
+  }
+}
+.grid {
+  display: grid;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.mx-0 {
+  margin-block: 0px;
+}
+
+.px-0 {
+  padding-block: 0px;
+}
+
+.my-0 {
+  margin-inline: 0px;
+}
+
+.py-0 {
+  padding-block: 0px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
+.mr-0 {
+  margin-right: 0px;
+}
+
+.pt-0 {
+  padding-top: 0px;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pl-0 {
+  padding-left: 0px;
+}
+
+.pr-0 {
+  padding-right: 0px;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.p-auto {
+  padding: auto;
+}
+
+.m-1 {
+  margin: 2px;
+}
+
+.p-1 {
+  padding: 2px;
+}
+
+.mx-1 {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.px-1 {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.my-1 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.py-1 {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.mt-1 {
+  margin-top: 2px;
+}
+
+.mb-1 {
+  margin-bottom: 2px;
+}
+
+.ml-1 {
+  margin-left: 2px;
+}
+
+.mr-1 {
+  margin-right: 2px;
+}
+
+.pt-1 {
+  padding-top: 2px;
+}
+
+.pb-1 {
+  padding-bottom: 2px;
+}
+
+.pl-1 {
+  padding-left: 2px;
+}
+
+.pr-1 {
+  padding-right: 2px;
+}
+
+.m-2 {
+  margin: 4px;
+}
+
+.p-2 {
+  padding: 4px;
+}
+
+.mx-2 {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.px-2 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.my-2 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.py-2 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.mt-2 {
+  margin-top: 4px;
+}
+
+.mb-2 {
+  margin-bottom: 4px;
+}
+
+.ml-2 {
+  margin-left: 4px;
+}
+
+.mr-2 {
+  margin-right: 4px;
+}
+
+.pt-2 {
+  padding-top: 4px;
+}
+
+.pb-2 {
+  padding-bottom: 4px;
+}
+
+.pl-2 {
+  padding-left: 4px;
+}
+
+.pr-2 {
+  padding-right: 4px;
+}
+
+.m-3 {
+  margin: 8px;
+}
+
+.p-3 {
+  padding: 8px;
+}
+
+.mx-3 {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.px-3 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.my-3 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.py-3 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.mt-3 {
+  margin-top: 8px;
+}
+
+.mb-3 {
+  margin-bottom: 8px;
+}
+
+.ml-3 {
+  margin-left: 8px;
+}
+
+.mr-3 {
+  margin-right: 8px;
+}
+
+.pt-3 {
+  padding-top: 8px;
+}
+
+.pb-3 {
+  padding-bottom: 8px;
+}
+
+.pl-3 {
+  padding-left: 8px;
+}
+
+.pr-3 {
+  padding-right: 8px;
+}
+
+.m-4 {
+  margin: 16px;
+}
+
+.p-4 {
+  padding: 16px;
+}
+
+.mx-4 {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.px-4 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.my-4 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.py-4 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.mt-4 {
+  margin-top: 16px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.ml-4 {
+  margin-left: 16px;
+}
+
+.mr-4 {
+  margin-right: 16px;
+}
+
+.pt-4 {
+  padding-top: 16px;
+}
+
+.pb-4 {
+  padding-bottom: 16px;
+}
+
+.pl-4 {
+  padding-left: 16px;
+}
+
+.pr-4 {
+  padding-right: 16px;
+}
+
+.m-5 {
+  margin: 32px;
+}
+
+.p-5 {
+  padding: 32px;
+}
+
+.mx-5 {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.px-5 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.my-5 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.py-5 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.mt-5 {
+  margin-top: 32px;
+}
+
+.mb-5 {
+  margin-bottom: 32px;
+}
+
+.ml-5 {
+  margin-left: 32px;
+}
+
+.mr-5 {
+  margin-right: 32px;
+}
+
+.pt-5 {
+  padding-top: 32px;
+}
+
+.pb-5 {
+  padding-bottom: 32px;
+}
+
+.pl-5 {
+  padding-left: 32px;
+}
+
+.pr-5 {
+  padding-right: 32px;
+}
+
+.m-6 {
+  margin: 64px;
+}
+
+.p-6 {
+  padding: 64px;
+}
+
+.mx-6 {
+  margin-left: 64px;
+  margin-right: 64px;
+}
+
+.px-6 {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.my-6 {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.py-6 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.mt-6 {
+  margin-top: 64px;
+}
+
+.mb-6 {
+  margin-bottom: 64px;
+}
+
+.ml-6 {
+  margin-left: 64px;
+}
+
+.mr-6 {
+  margin-right: 64px;
+}
+
+.pt-6 {
+  padding-top: 64px;
+}
+
+.pb-6 {
+  padding-bottom: 64px;
+}
+
+.pl-6 {
+  padding-left: 64px;
+}
+
+.pr-6 {
+  padding-right: 64px;
+}
+
+.m-7 {
+  margin: 128px;
+}
+
+.p-7 {
+  padding: 128px;
+}
+
+.mx-7 {
+  margin-left: 128px;
+  margin-right: 128px;
+}
+
+.px-7 {
+  padding-left: 128px;
+  padding-right: 128px;
+}
+
+.my-7 {
+  margin-top: 128px;
+  margin-bottom: 128px;
+}
+
+.py-7 {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
+.mt-7 {
+  margin-top: 128px;
+}
+
+.mb-7 {
+  margin-bottom: 128px;
+}
+
+.ml-7 {
+  margin-left: 128px;
+}
+
+.mr-7 {
+  margin-right: 128px;
+}
+
+.pt-7 {
+  padding-top: 128px;
+}
+
+.pb-7 {
+  padding-bottom: 128px;
+}
+
+.pl-7 {
+  padding-left: 128px;
+}
+
+.pr-7 {
+  padding-right: 128px;
+}
+
+.m-8 {
+  margin: 256px;
+}
+
+.p-8 {
+  padding: 256px;
+}
+
+.mx-8 {
+  margin-left: 256px;
+  margin-right: 256px;
+}
+
+.px-8 {
+  padding-left: 256px;
+  padding-right: 256px;
+}
+
+.my-8 {
+  margin-top: 256px;
+  margin-bottom: 256px;
+}
+
+.py-8 {
+  padding-top: 256px;
+  padding-bottom: 256px;
+}
+
+.mt-8 {
+  margin-top: 256px;
+}
+
+.mb-8 {
+  margin-bottom: 256px;
+}
+
+.ml-8 {
+  margin-left: 256px;
+}
+
+.mr-8 {
+  margin-right: 256px;
+}
+
+.pt-8 {
+  padding-top: 256px;
+}
+
+.pb-8 {
+  padding-bottom: 256px;
+}
+
+.pl-8 {
+  padding-left: 256px;
+}
+
+.pr-8 {
+  padding-right: 256px;
+}
+
+.m-9 {
+  margin: 512px;
+}
+
+.p-9 {
+  padding: 512px;
+}
+
+.mx-9 {
+  margin-left: 512px;
+  margin-right: 512px;
+}
+
+.px-9 {
+  padding-left: 512px;
+  padding-right: 512px;
+}
+
+.my-9 {
+  margin-top: 512px;
+  margin-bottom: 512px;
+}
+
+.py-9 {
+  padding-top: 512px;
+  padding-bottom: 512px;
+}
+
+.mt-9 {
+  margin-top: 512px;
+}
+
+.mb-9 {
+  margin-bottom: 512px;
+}
+
+.ml-9 {
+  margin-left: 512px;
+}
+
+.mr-9 {
+  margin-right: 512px;
+}
+
+.pt-9 {
+  padding-top: 512px;
+}
+
+.pb-9 {
+  padding-bottom: 512px;
+}
+
+.pl-9 {
+  padding-left: 512px;
+}
+
+.pr-9 {
+  padding-right: 512px;
+}
+
+/* Element Design tokens */
+/* Typography */
+/*List style types*/
+.none {
+  list-style-type: none;
+}
+
+.disc {
+  list-style-type: disc;
+}
+
+.armenian {
+  list-style-type: armenian;
+}
+
+.circle {
+  list-style-type: circle;
+}
+
+.decimal {
+  list-style-type: decimal;
+}
+
+.decimal-leading-zero {
+  list-style-type: decimal-leading-zero;
+}
+
+.georgian {
+  list-style-type: georgian;
+}
+
+.lower-alpha {
+  list-style-type: lower-alpha;
+}
+
+.lower-greek {
+  list-style-type: lower-greek;
+}
+
+.lower-latin {
+  list-style-type: lower-latin;
+}
+
+.lower-roman {
+  list-style-type: lower-roman;
+}
+
+.upper-alpha {
+  list-style-type: upper-alpha;
+}
+
+.upper-roman {
+  list-style-type: upper-roman;
+}
+
+.upper-latin {
+  list-style-type: upper-latin;
+}
+
+.square {
+  list-style-type: square;
+}
+
+/* Utility method for Sentence Case */
+a {
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+}
+
+* {
+  overflow-wrap: break-word;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+.h1,
+h3,
+.h3,
+h5,
+.h5 {
+  color: #121212;
+}
+
+h2,
+.h2,
+h4,
+.h4,
+h6.h6,
+h1,
+.h1,
+h3,
+.h3,
+h5,
+.h5,
+.body1,
+.body2,
+.subtitle1,
+.subtitle2,
+button,
+.btn,
+.overline,
+caption,
+.caption,
+.underline,
+body {
+  font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h2,
+.h2,
+h4,
+.h4,
+h6.h6 {
+  color: darkgray;
+}
+
+h1,
+.h1 {
+  font-weight: 300;
+  text-transform: lowercase;
+  letter-spacing: 0.0046875rem;
+  font-size: 6rem;
+}
+h1:first-letter,
+.h1:first-letter {
+  text-transform: uppercase;
+}
+
+h2,
+.h2 {
+  font-weight: 300;
+  text-transform: lowercase;
+  font-size: 3.8125rem;
+  letter-spacing: 0.0029785156rem;
+}
+h2:first-letter,
+.h2:first-letter {
+  text-transform: uppercase;
+}
+
+h3,
+.h3 {
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 3.0625rem;
+  letter-spacing: 0.0023925781rem;
+}
+h3:first-letter,
+.h3:first-letter {
+  text-transform: uppercase;
+}
+
+h4,
+.h4 {
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 2.1875rem;
+  letter-spacing: 0.0017089844rem;
+}
+h4:first-letter,
+.h4:first-letter {
+  text-transform: uppercase;
+}
+
+h5,
+.h5 {
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.001171875rem;
+}
+h5:first-letter,
+.h5:first-letter {
+  text-transform: uppercase;
+}
+
+h6,
+.h6 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-transform: lowercase;
+  letter-spacing: 0.0009765625rem;
+}
+h6:first-letter,
+.h6:first-letter {
+  text-transform: uppercase;
+}
+
+.body1 {
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: lowercase;
+  letter-spacing: 0.00078125rem;
+}
+.body1:first-letter {
+  text-transform: uppercase;
+}
+
+.body2 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-transform: lowercase;
+  letter-spacing: 0.0006835938rem;
+}
+.body2:first-letter {
+  text-transform: uppercase;
+}
+
+.subtitle1 {
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: lowercase;
+  letter-spacing: 0.00078125rem;
+}
+.subtitle1:first-letter {
+  text-transform: uppercase;
+}
+
+.subtitle2 {
+  font-size: 0.875rem;
+  text-transform: lowercase;
+  letter-spacing: 0.0006835938rem;
+}
+.subtitle2:first-letter {
+  text-transform: uppercase;
+}
+
+button,
+.btn {
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.0006835938rem;
+}
+
+.overline {
+  text-decoration: overline;
+  font-weight: 400;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.0004882813rem;
+}
+
+caption,
+.caption {
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-transform: lowercase;
+  letter-spacing: 0.0005859375rem;
+}
+caption:first-letter,
+.caption:first-letter {
+  text-transform: uppercase;
+}
+
+u,
+.underline {
+  text-decoration: underline;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-start {
+  text-align: start;
+}
+
+.txt-end {
+  text-align: end;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-justify {
+  text-align: justify;
+}
+
+abbr {
+  cursor: pointer;
+}
+
+.antiquewhite {
+  color: antiquewhite;
+}
+
+.bg-antiquewhite {
+  background-color: antiquewhite;
+}
+
+.hover-antiquewhite:hover {
+  background-color: #faebd8;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-antiquewhite {
+  border-color: antiquewhite;
+}
+
+.outline-antiquewhite {
+  outline-color: antiquewhite;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.aqua {
+  color: aqua;
+}
+
+.bg-aqua {
+  background-color: aqua;
+}
+
+.hover-aqua:hover {
+  background-color: #01ffff;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-aqua {
+  border-color: aqua;
+}
+
+.outline-aqua {
+  outline-color: aqua;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.aquamarine {
+  color: aquamarine;
+}
+
+.bg-aquamarine {
+  background-color: aquamarine;
+}
+
+.hover-aquamarine:hover {
+  background-color: #80ffd4;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-aquamarine {
+  border-color: aquamarine;
+}
+
+.outline-aquamarine {
+  outline-color: aquamarine;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.azure {
+  color: azure;
+}
+
+.bg-azure {
+  background-color: azure;
+}
+
+.hover-azure:hover {
+  background-color: #f1ffff;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-azure {
+  border-color: azure;
+}
+
+.outline-azure {
+  outline-color: azure;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.beige {
+  color: beige;
+}
+
+.bg-beige {
+  background-color: beige;
+}
+
+.hover-beige:hover {
+  background-color: #f5f5dd;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-beige {
+  border-color: beige;
+}
+
+.outline-beige {
+  outline-color: beige;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.bisque {
+  color: bisque;
+}
+
+.bg-bisque {
+  background-color: bisque;
+}
+
+.hover-bisque:hover {
+  background-color: #ffe4c5;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-bisque {
+  border-color: bisque;
+}
+
+.outline-bisque {
+  outline-color: bisque;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.black {
+  color: black;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.hover-black:hover {
+  background-color: #010101;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-black {
+  border-color: black;
+}
+
+.outline-black {
+  outline-color: black;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.blanchedalmond {
+  color: blanchedalmond;
+}
+
+.bg-blanchedalmond {
+  background-color: blanchedalmond;
+}
+
+.hover-blanchedalmond:hover {
+  background-color: #ffebce;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-blanchedalmond {
+  border-color: blanchedalmond;
+}
+
+.outline-blanchedalmond {
+  outline-color: blanchedalmond;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.blue {
+  color: blue;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.hover-blue:hover {
+  background-color: #0101ff;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-blue {
+  border-color: blue;
+}
+
+.outline-blue {
+  outline-color: blue;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.blueviolet {
+  color: blueviolet;
+}
+
+.bg-blueviolet {
+  background-color: blueviolet;
+}
+
+.hover-blueviolet:hover {
+  background-color: #8a2ce2;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-blueviolet {
+  border-color: blueviolet;
+}
+
+.outline-blueviolet {
+  outline-color: blueviolet;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.brown {
+  color: brown;
+}
+
+.bg-brown {
+  background-color: brown;
+}
+
+.hover-brown:hover {
+  background-color: #a62a2a;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-brown {
+  border-color: brown;
+}
+
+.outline-brown {
+  outline-color: brown;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.burlywood {
+  color: burlywood;
+}
+
+.bg-burlywood {
+  background-color: burlywood;
+}
+
+.hover-burlywood:hover {
+  background-color: #deb888;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-burlywood {
+  border-color: burlywood;
+}
+
+.outline-burlywood {
+  outline-color: burlywood;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.cadetblue {
+  color: cadetblue;
+}
+
+.bg-cadetblue {
+  background-color: cadetblue;
+}
+
+.hover-cadetblue:hover {
+  background-color: #609ea0;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-cadetblue {
+  border-color: cadetblue;
+}
+
+.outline-cadetblue {
+  outline-color: cadetblue;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.chartreuse {
+  color: chartreuse;
+}
+
+.bg-chartreuse {
+  background-color: chartreuse;
+}
+
+.hover-chartreuse:hover {
+  background-color: #80ff01;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-chartreuse {
+  border-color: chartreuse;
+}
+
+.outline-chartreuse {
+  outline-color: chartreuse;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.chocolate {
+  color: chocolate;
+}
+
+.bg-chocolate {
+  background-color: chocolate;
+}
+
+.hover-chocolate:hover {
+  background-color: #d3691e;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-chocolate {
+  border-color: chocolate;
+}
+
+.outline-chocolate {
+  outline-color: chocolate;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.coral {
+  color: coral;
+}
+
+.bg-coral {
+  background-color: coral;
+}
+
+.hover-coral:hover {
+  background-color: #ff8051;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-coral {
+  border-color: coral;
+}
+
+.outline-coral {
+  outline-color: coral;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.cornflowerblue {
+  color: cornflowerblue;
+}
+
+.bg-cornflowerblue {
+  background-color: cornflowerblue;
+}
+
+.hover-cornflowerblue:hover {
+  background-color: #6596ed;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-cornflowerblue {
+  border-color: cornflowerblue;
+}
+
+.outline-cornflowerblue {
+  outline-color: cornflowerblue;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.cornsilk {
+  color: cornsilk;
+}
+
+.bg-cornsilk {
+  background-color: cornsilk;
+}
+
+.hover-cornsilk:hover {
+  background-color: #fff8dd;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-cornsilk {
+  border-color: cornsilk;
+}
+
+.outline-cornsilk {
+  outline-color: cornsilk;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.crimson {
+  color: crimson;
+}
+
+.bg-crimson {
+  background-color: crimson;
+}
+
+.hover-crimson:hover {
+  background-color: #dd143c;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-crimson {
+  border-color: crimson;
+}
+
+.outline-crimson {
+  outline-color: crimson;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.cyan {
+  color: cyan;
+}
+
+.bg-cyan {
+  background-color: cyan;
+}
+
+.hover-cyan:hover {
+  background-color: #01ffff;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-cyan {
+  border-color: cyan;
+}
+
+.outline-cyan {
+  outline-color: cyan;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.darkblue {
+  color: darkblue;
+}
+
+.bg-darkblue {
+  background-color: darkblue;
+}
+
+.hover-darkblue:hover {
+  background-color: #00008c;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-darkblue {
+  border-color: darkblue;
+}
+
+.outline-darkblue {
+  outline-color: darkblue;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.darkcyan {
+  color: darkcyan;
+}
+
+.bg-darkcyan {
+  background-color: darkcyan;
+}
+
+.hover-darkcyan:hover {
+  background-color: #008c8c;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-darkcyan {
+  border-color: darkcyan;
+}
+
+.outline-darkcyan {
+  outline-color: darkcyan;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.darkgoldenrod {
+  color: darkgoldenrod;
+}
+
+.bg-darkgoldenrod {
+  background-color: darkgoldenrod;
+}
+
+.hover-darkgoldenrod:hover {
+  background-color: #b9870b;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-darkgoldenrod {
+  border-color: darkgoldenrod;
+}
+
+.outline-darkgoldenrod {
+  outline-color: darkgoldenrod;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.darkgray {
+  color: darkgray;
+}
+
+.bg-darkgray {
+  background-color: darkgray;
+}
+
+.hover-darkgray:hover {
+  background-color: #aaaaaa;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-darkgray {
+  border-color: darkgray;
+}
+
+.outline-darkgray {
+  outline-color: darkgray;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.darkgreen {
+  color: darkgreen;
+}
+
+.bg-darkgreen {
+  background-color: darkgreen;
+}
+
+.hover-darkgreen:hover {
+  background-color: #006500;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-darkgreen {
+  border-color: darkgreen;
+}
+
+.outline-darkgreen {
+  outline-color: darkgreen;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.darkgrey {
+  color: darkgrey;
+}
+
+.bg-darkgrey {
+  background-color: darkgrey;
+}
+
+.hover-darkgrey:hover {
+  background-color: #aaaaaa;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-darkgrey {
+  border-color: darkgrey;
+}
+
+.outline-darkgrey {
+  outline-color: darkgrey;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.darkkhaki {
+  color: darkkhaki;
+}
+
+.bg-darkkhaki {
+  background-color: darkkhaki;
+}
+
+.hover-darkkhaki:hover {
+  background-color: #bdb76c;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-darkkhaki {
+  border-color: darkkhaki;
+}
+
+.outline-darkkhaki {
+  outline-color: darkkhaki;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.darkmagenta {
+  color: darkmagenta;
+}
+
+.bg-darkmagenta {
+  background-color: darkmagenta;
+}
+
+.hover-darkmagenta:hover {
+  background-color: #8c008c;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-darkmagenta {
+  border-color: darkmagenta;
+}
+
+.outline-darkmagenta {
+  outline-color: darkmagenta;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.darkolivegreen {
+  color: darkolivegreen;
+}
+
+.bg-darkolivegreen {
+  background-color: darkolivegreen;
+}
+
+.hover-darkolivegreen:hover {
+  background-color: #566c2f;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-darkolivegreen {
+  border-color: darkolivegreen;
+}
+
+.outline-darkolivegreen {
+  outline-color: darkolivegreen;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.darkorange {
+  color: darkorange;
+}
+
+.bg-darkorange {
+  background-color: darkorange;
+}
+
+.hover-darkorange:hover {
+  background-color: #ff8c01;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-darkorange {
+  border-color: darkorange;
+}
+
+.outline-darkorange {
+  outline-color: darkorange;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.darkorchid {
+  color: darkorchid;
+}
+
+.bg-darkorchid {
+  background-color: darkorchid;
+}
+
+.hover-darkorchid:hover {
+  background-color: #9a32cd;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-darkorchid {
+  border-color: darkorchid;
+}
+
+.outline-darkorchid {
+  outline-color: darkorchid;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.darkred {
+  color: darkred;
+}
+
+.bg-darkred {
+  background-color: darkred;
+}
+
+.hover-darkred:hover {
+  background-color: #8c0000;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-darkred {
+  border-color: darkred;
+}
+
+.outline-darkred {
+  outline-color: darkred;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.darksalmon {
+  color: darksalmon;
+}
+
+.bg-darksalmon {
+  background-color: darksalmon;
+}
+
+.hover-darksalmon:hover {
+  background-color: #e9977b;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-darksalmon {
+  border-color: darksalmon;
+}
+
+.outline-darksalmon {
+  outline-color: darksalmon;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.darkseagreen {
+  color: darkseagreen;
+}
+
+.bg-darkseagreen {
+  background-color: darkseagreen;
+}
+
+.hover-darkseagreen:hover {
+  background-color: #90bc90;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-darkseagreen {
+  border-color: darkseagreen;
+}
+
+.outline-darkseagreen {
+  outline-color: darkseagreen;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.darkslateblue {
+  color: darkslateblue;
+}
+
+.bg-darkslateblue {
+  background-color: darkslateblue;
+}
+
+.hover-darkslateblue:hover {
+  background-color: #483d8c;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-darkslateblue {
+  border-color: darkslateblue;
+}
+
+.outline-darkslateblue {
+  outline-color: darkslateblue;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.darkslategray {
+  color: darkslategray;
+}
+
+.bg-darkslategray {
+  background-color: darkslategray;
+}
+
+.hover-darkslategray:hover {
+  background-color: #2f5050;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-darkslategray {
+  border-color: darkslategray;
+}
+
+.outline-darkslategray {
+  outline-color: darkslategray;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.darkturquoise {
+  color: darkturquoise;
+}
+
+.bg-darkturquoise {
+  background-color: darkturquoise;
+}
+
+.hover-darkturquoise:hover {
+  background-color: #00cfd2;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-darkturquoise {
+  border-color: darkturquoise;
+}
+
+.outline-darkturquoise {
+  outline-color: darkturquoise;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.darkviolet {
+  color: darkviolet;
+}
+
+.bg-darkviolet {
+  background-color: darkviolet;
+}
+
+.hover-darkviolet:hover {
+  background-color: #9500d4;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-darkviolet {
+  border-color: darkviolet;
+}
+
+.outline-darkviolet {
+  outline-color: darkviolet;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.deeppink {
+  color: deeppink;
+}
+
+.bg-deeppink {
+  background-color: deeppink;
+}
+
+.hover-deeppink:hover {
+  background-color: #ff1593;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-deeppink {
+  border-color: deeppink;
+}
+
+.outline-deeppink {
+  outline-color: deeppink;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.deepskyblue {
+  color: deepskyblue;
+}
+
+.bg-deepskyblue {
+  background-color: deepskyblue;
+}
+
+.hover-deepskyblue:hover {
+  background-color: #01bfff;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-deepskyblue {
+  border-color: deepskyblue;
+}
+
+.outline-deepskyblue {
+  outline-color: deepskyblue;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.dimgray {
+  color: dimgray;
+}
+
+.bg-dimgray {
+  background-color: dimgray;
+}
+
+.hover-dimgray:hover {
+  background-color: #6a6a6a;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-dimgray {
+  border-color: dimgray;
+}
+
+.outline-dimgray {
+  outline-color: dimgray;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.dimgrey {
+  color: dimgrey;
+}
+
+.bg-dimgrey {
+  background-color: dimgrey;
+}
+
+.hover-dimgrey:hover {
+  background-color: #6a6a6a;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-dimgrey {
+  border-color: dimgrey;
+}
+
+.outline-dimgrey {
+  outline-color: dimgrey;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.dodgerblue {
+  color: dodgerblue;
+}
+
+.bg-dodgerblue {
+  background-color: dodgerblue;
+}
+
+.hover-dodgerblue:hover {
+  background-color: #1f91ff;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-dodgerblue {
+  border-color: dodgerblue;
+}
+
+.outline-dodgerblue {
+  outline-color: dodgerblue;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.firebrick {
+  color: firebrick;
+}
+
+.bg-firebrick {
+  background-color: firebrick;
+}
+
+.hover-firebrick:hover {
+  background-color: #b32222;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-firebrick {
+  border-color: firebrick;
+}
+
+.outline-firebrick {
+  outline-color: firebrick;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.floralwhite {
+  color: floralwhite;
+}
+
+.bg-floralwhite {
+  background-color: floralwhite;
+}
+
+.hover-floralwhite:hover {
+  background-color: #fffaf1;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-floralwhite {
+  border-color: floralwhite;
+}
+
+.outline-floralwhite {
+  outline-color: floralwhite;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.forestgreen {
+  color: forestgreen;
+}
+
+.bg-forestgreen {
+  background-color: forestgreen;
+}
+
+.hover-forestgreen:hover {
+  background-color: #228c22;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-forestgreen {
+  border-color: forestgreen;
+}
+
+.outline-forestgreen {
+  outline-color: forestgreen;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.fuchsia {
+  color: fuchsia;
+}
+
+.bg-fuchsia {
+  background-color: fuchsia;
+}
+
+.hover-fuchsia:hover {
+  background-color: #ff01ff;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-fuchsia {
+  border-color: fuchsia;
+}
+
+.outline-fuchsia {
+  outline-color: fuchsia;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.gainsboro {
+  color: gainsboro;
+}
+
+.bg-gainsboro {
+  background-color: gainsboro;
+}
+
+.hover-gainsboro:hover {
+  background-color: #dddddd;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-gainsboro {
+  border-color: gainsboro;
+}
+
+.outline-gainsboro {
+  outline-color: gainsboro;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.ghostwhite {
+  color: ghostwhite;
+}
+
+.bg-ghostwhite {
+  background-color: ghostwhite;
+}
+
+.hover-ghostwhite:hover {
+  background-color: #f9f9ff;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-ghostwhite {
+  border-color: ghostwhite;
+}
+
+.outline-ghostwhite {
+  outline-color: ghostwhite;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.gold {
+  color: gold;
+}
+
+.bg-gold {
+  background-color: gold;
+}
+
+.hover-gold:hover {
+  background-color: #ffd701;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-gold {
+  border-color: gold;
+}
+
+.outline-gold {
+  outline-color: gold;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.goldenrod {
+  color: goldenrod;
+}
+
+.bg-goldenrod {
+  background-color: goldenrod;
+}
+
+.hover-goldenrod:hover {
+  background-color: #dba620;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-goldenrod {
+  border-color: goldenrod;
+}
+
+.outline-goldenrod {
+  outline-color: goldenrod;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.gray {
+  color: gray;
+}
+
+.bg-gray {
+  background-color: gray;
+}
+
+.hover-gray:hover {
+  background-color: #818181;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-gray {
+  border-color: gray;
+}
+
+.outline-gray {
+  outline-color: gray;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.grey {
+  color: grey;
+}
+
+.bg-grey {
+  background-color: grey;
+}
+
+.hover-grey:hover {
+  background-color: #818181;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-grey {
+  border-color: grey;
+}
+
+.outline-grey {
+  outline-color: grey;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.green {
+  color: green;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.hover-green:hover {
+  background-color: #008100;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-green {
+  border-color: green;
+}
+
+.outline-green {
+  outline-color: green;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.greenyellow {
+  color: greenyellow;
+}
+
+.bg-greenyellow {
+  background-color: greenyellow;
+}
+
+.hover-greenyellow:hover {
+  background-color: #adff30;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-greenyellow {
+  border-color: greenyellow;
+}
+
+.outline-greenyellow {
+  outline-color: greenyellow;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.honeydew {
+  color: honeydew;
+}
+
+.bg-honeydew {
+  background-color: honeydew;
+}
+
+.hover-honeydew:hover {
+  background-color: #f1fff1;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-honeydew {
+  border-color: honeydew;
+}
+
+.outline-honeydew {
+  outline-color: honeydew;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.hotpink {
+  color: hotpink;
+}
+
+.bg-hotpink {
+  background-color: hotpink;
+}
+
+.hover-hotpink:hover {
+  background-color: #ff6ab5;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-hotpink {
+  border-color: hotpink;
+}
+
+.outline-hotpink {
+  outline-color: hotpink;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.indianred {
+  color: indianred;
+}
+
+.bg-indianred {
+  background-color: indianred;
+}
+
+.hover-indianred:hover {
+  background-color: #cd5d5d;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-indianred {
+  border-color: indianred;
+}
+
+.outline-indianred {
+  outline-color: indianred;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.indigo {
+  color: indigo;
+}
+
+.bg-indigo {
+  background-color: indigo;
+}
+
+.hover-indigo:hover {
+  background-color: #4c0083;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-indigo {
+  border-color: indigo;
+}
+
+.outline-indigo {
+  outline-color: indigo;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.ivory {
+  color: ivory;
+}
+
+.bg-ivory {
+  background-color: ivory;
+}
+
+.hover-ivory:hover {
+  background-color: #fffff1;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-ivory {
+  border-color: ivory;
+}
+
+.outline-ivory {
+  outline-color: ivory;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.khaki {
+  color: khaki;
+}
+
+.bg-khaki {
+  background-color: khaki;
+}
+
+.hover-khaki:hover {
+  background-color: #f0e68d;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-khaki {
+  border-color: khaki;
+}
+
+.outline-khaki {
+  outline-color: khaki;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lavender {
+  color: lavender;
+}
+
+.bg-lavender {
+  background-color: lavender;
+}
+
+.hover-lavender:hover {
+  background-color: #e7e7fa;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lavender {
+  border-color: lavender;
+}
+
+.outline-lavender {
+  outline-color: lavender;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lavenderblush {
+  color: lavenderblush;
+}
+
+.bg-lavenderblush {
+  background-color: lavenderblush;
+}
+
+.hover-lavenderblush:hover {
+  background-color: #fff1f6;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lavenderblush {
+  border-color: lavenderblush;
+}
+
+.outline-lavenderblush {
+  outline-color: lavenderblush;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lawngreen {
+  color: lawngreen;
+}
+
+.bg-lawngreen {
+  background-color: lawngreen;
+}
+
+.hover-lawngreen:hover {
+  background-color: #7dfd00;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lawngreen {
+  border-color: lawngreen;
+}
+
+.outline-lawngreen {
+  outline-color: lawngreen;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lemonchiffon {
+  color: lemonchiffon;
+}
+
+.bg-lemonchiffon {
+  background-color: lemonchiffon;
+}
+
+.hover-lemonchiffon:hover {
+  background-color: #ffface;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lemonchiffon {
+  border-color: lemonchiffon;
+}
+
+.outline-lemonchiffon {
+  outline-color: lemonchiffon;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lightblue {
+  color: lightblue;
+}
+
+.bg-lightblue {
+  background-color: lightblue;
+}
+
+.hover-lightblue:hover {
+  background-color: #aed8e6;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lightblue {
+  border-color: lightblue;
+}
+
+.outline-lightblue {
+  outline-color: lightblue;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lightcoral {
+  color: lightcoral;
+}
+
+.bg-lightcoral {
+  background-color: lightcoral;
+}
+
+.hover-lightcoral:hover {
+  background-color: #f08181;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lightcoral {
+  border-color: lightcoral;
+}
+
+.outline-lightcoral {
+  outline-color: lightcoral;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lightcyan {
+  color: lightcyan;
+}
+
+.bg-lightcyan {
+  background-color: lightcyan;
+}
+
+.hover-lightcyan:hover {
+  background-color: #e1ffff;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lightcyan {
+  border-color: lightcyan;
+}
+
+.outline-lightcyan {
+  outline-color: lightcyan;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lightgoldenrodyellow {
+  color: lightgoldenrodyellow;
+}
+
+.bg-lightgoldenrodyellow {
+  background-color: lightgoldenrodyellow;
+}
+
+.hover-lightgoldenrodyellow:hover {
+  background-color: #fafad3;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lightgoldenrodyellow {
+  border-color: lightgoldenrodyellow;
+}
+
+.outline-lightgoldenrodyellow {
+  outline-color: lightgoldenrodyellow;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lightgray {
+  color: lightgray;
+}
+
+.bg-lightgray {
+  background-color: lightgray;
+}
+
+.hover-lightgray:hover {
+  background-color: #d4d4d4;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lightgray {
+  border-color: lightgray;
+}
+
+.outline-lightgray {
+  outline-color: lightgray;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lightgrey {
+  color: lightgrey;
+}
+
+.bg-lightgrey {
+  background-color: lightgrey;
+}
+
+.hover-lightgrey:hover {
+  background-color: #d4d4d4;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lightgrey {
+  border-color: lightgrey;
+}
+
+.outline-lightgrey {
+  outline-color: lightgrey;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lightgreen {
+  color: lightgreen;
+}
+
+.bg-lightgreen {
+  background-color: lightgreen;
+}
+
+.hover-lightgreen:hover {
+  background-color: #91ee91;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lightgreen {
+  border-color: lightgreen;
+}
+
+.outline-lightgreen {
+  outline-color: lightgreen;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lightpink {
+  color: lightpink;
+}
+
+.bg-lightpink {
+  background-color: lightpink;
+}
+
+.hover-lightpink:hover {
+  background-color: #ffb7c2;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lightpink {
+  border-color: lightpink;
+}
+
+.outline-lightpink {
+  outline-color: lightpink;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lightsalmon {
+  color: lightsalmon;
+}
+
+.bg-lightsalmon {
+  background-color: lightsalmon;
+}
+
+.hover-lightsalmon:hover {
+  background-color: #ffa17b;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lightsalmon {
+  border-color: lightsalmon;
+}
+
+.outline-lightsalmon {
+  outline-color: lightsalmon;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lightseagreen {
+  color: lightseagreen;
+}
+
+.bg-lightseagreen {
+  background-color: lightseagreen;
+}
+
+.hover-lightseagreen:hover {
+  background-color: #20b3ab;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lightseagreen {
+  border-color: lightseagreen;
+}
+
+.outline-lightseagreen {
+  outline-color: lightseagreen;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lightskyblue {
+  color: lightskyblue;
+}
+
+.bg-lightskyblue {
+  background-color: lightskyblue;
+}
+
+.hover-lightskyblue:hover {
+  background-color: #88cefa;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lightskyblue {
+  border-color: lightskyblue;
+}
+
+.outline-lightskyblue {
+  outline-color: lightskyblue;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lightslategray {
+  color: lightslategray;
+}
+
+.bg-lightslategray {
+  background-color: lightslategray;
+}
+
+.hover-lightslategray:hover {
+  background-color: #788999;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lightslategray {
+  border-color: lightslategray;
+}
+
+.outline-lightslategray {
+  outline-color: lightslategray;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lightslategrey {
+  color: lightslategrey;
+}
+
+.bg-lightslategrey {
+  background-color: lightslategrey;
+}
+
+.hover-lightslategrey:hover {
+  background-color: #788999;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lightslategrey {
+  border-color: lightslategrey;
+}
+
+.outline-lightslategrey {
+  outline-color: lightslategrey;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lightsteelblue {
+  color: lightsteelblue;
+}
+
+.bg-lightsteelblue {
+  background-color: lightsteelblue;
+}
+
+.hover-lightsteelblue:hover {
+  background-color: #b1c5de;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lightsteelblue {
+  border-color: lightsteelblue;
+}
+
+.outline-lightsteelblue {
+  outline-color: lightsteelblue;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lightyellow {
+  color: lightyellow;
+}
+
+.bg-lightyellow {
+  background-color: lightyellow;
+}
+
+.hover-lightyellow:hover {
+  background-color: #ffffe1;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lightyellow {
+  border-color: lightyellow;
+}
+
+.outline-lightyellow {
+  outline-color: lightyellow;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.lime {
+  color: lime;
+}
+
+.bg-lime {
+  background-color: lime;
+}
+
+.hover-lime:hover {
+  background-color: #01ff01;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-lime {
+  border-color: lime;
+}
+
+.outline-lime {
+  outline-color: lime;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.limegreen {
+  color: limegreen;
+}
+
+.bg-limegreen {
+  background-color: limegreen;
+}
+
+.hover-limegreen:hover {
+  background-color: #33cd33;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-limegreen {
+  border-color: limegreen;
+}
+
+.outline-limegreen {
+  outline-color: limegreen;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.linen {
+  color: linen;
+}
+
+.bg-linen {
+  background-color: linen;
+}
+
+.hover-linen:hover {
+  background-color: #faf1e7;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-linen {
+  border-color: linen;
+}
+
+.outline-linen {
+  outline-color: linen;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.magenta {
+  color: magenta;
+}
+
+.bg-magenta {
+  background-color: magenta;
+}
+
+.hover-magenta:hover {
+  background-color: #ff01ff;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-magenta {
+  border-color: magenta;
+}
+
+.outline-magenta {
+  outline-color: magenta;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.maroon {
+  color: maroon;
+}
+
+.bg-maroon {
+  background-color: maroon;
+}
+
+.hover-maroon:hover {
+  background-color: #810000;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-maroon {
+  border-color: maroon;
+}
+
+.outline-maroon {
+  outline-color: maroon;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.mediumaquamarine {
+  color: mediumaquamarine;
+}
+
+.bg-mediumaquamarine {
+  background-color: mediumaquamarine;
+}
+
+.hover-mediumaquamarine:hover {
+  background-color: #67cdaa;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-mediumaquamarine {
+  border-color: mediumaquamarine;
+}
+
+.outline-mediumaquamarine {
+  outline-color: mediumaquamarine;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.mediumblue {
+  color: mediumblue;
+}
+
+.bg-mediumblue {
+  background-color: mediumblue;
+}
+
+.hover-mediumblue:hover {
+  background-color: #0000ce;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-mediumblue {
+  border-color: mediumblue;
+}
+
+.outline-mediumblue {
+  outline-color: mediumblue;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.mediumorchid {
+  color: mediumorchid;
+}
+
+.bg-mediumorchid {
+  background-color: mediumorchid;
+}
+
+.hover-mediumorchid:hover {
+  background-color: #ba56d3;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-mediumorchid {
+  border-color: mediumorchid;
+}
+
+.outline-mediumorchid {
+  outline-color: mediumorchid;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.mediumpurple {
+  color: mediumpurple;
+}
+
+.bg-mediumpurple {
+  background-color: mediumpurple;
+}
+
+.hover-mediumpurple:hover {
+  background-color: #9471db;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-mediumpurple {
+  border-color: mediumpurple;
+}
+
+.outline-mediumpurple {
+  outline-color: mediumpurple;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.mediumseagreen {
+  color: mediumseagreen;
+}
+
+.bg-mediumseagreen {
+  background-color: mediumseagreen;
+}
+
+.hover-mediumseagreen:hover {
+  background-color: #3cb471;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-mediumseagreen {
+  border-color: mediumseagreen;
+}
+
+.outline-mediumseagreen {
+  outline-color: mediumseagreen;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.mediumslateblue {
+  color: mediumslateblue;
+}
+
+.bg-mediumslateblue {
+  background-color: mediumslateblue;
+}
+
+.hover-mediumslateblue:hover {
+  background-color: #7c69ee;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-mediumslateblue {
+  border-color: mediumslateblue;
+}
+
+.outline-mediumslateblue {
+  outline-color: mediumslateblue;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.mediumspringgreen {
+  color: mediumspringgreen;
+}
+
+.bg-mediumspringgreen {
+  background-color: mediumspringgreen;
+}
+
+.hover-mediumspringgreen:hover {
+  background-color: #00fb9b;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-mediumspringgreen {
+  border-color: mediumspringgreen;
+}
+
+.outline-mediumspringgreen {
+  outline-color: mediumspringgreen;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.mediumturquoise {
+  color: mediumturquoise;
+}
+
+.bg-mediumturquoise {
+  background-color: mediumturquoise;
+}
+
+.hover-mediumturquoise:hover {
+  background-color: #49d1cc;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-mediumturquoise {
+  border-color: mediumturquoise;
+}
+
+.outline-mediumturquoise {
+  outline-color: mediumturquoise;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.mediumvioletred {
+  color: mediumvioletred;
+}
+
+.bg-mediumvioletred {
+  background-color: mediumvioletred;
+}
+
+.hover-mediumvioletred:hover {
+  background-color: #c81586;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-mediumvioletred {
+  border-color: mediumvioletred;
+}
+
+.outline-mediumvioletred {
+  outline-color: mediumvioletred;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.midnightblue {
+  color: midnightblue;
+}
+
+.bg-midnightblue {
+  background-color: midnightblue;
+}
+
+.hover-midnightblue:hover {
+  background-color: #191971;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-midnightblue {
+  border-color: midnightblue;
+}
+
+.outline-midnightblue {
+  outline-color: midnightblue;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.mintcream {
+  color: mintcream;
+}
+
+.bg-mintcream {
+  background-color: mintcream;
+}
+
+.hover-mintcream:hover {
+  background-color: #f6fffb;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-mintcream {
+  border-color: mintcream;
+}
+
+.outline-mintcream {
+  outline-color: mintcream;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.mistyrose {
+  color: mistyrose;
+}
+
+.bg-mistyrose {
+  background-color: mistyrose;
+}
+
+.hover-mistyrose:hover {
+  background-color: #ffe5e2;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-mistyrose {
+  border-color: mistyrose;
+}
+
+.outline-mistyrose {
+  outline-color: mistyrose;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.moccasin {
+  color: moccasin;
+}
+
+.bg-moccasin {
+  background-color: moccasin;
+}
+
+.hover-moccasin:hover {
+  background-color: #ffe4b6;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-moccasin {
+  border-color: moccasin;
+}
+
+.outline-moccasin {
+  outline-color: moccasin;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.navajowhite {
+  color: navajowhite;
+}
+
+.bg-navajowhite {
+  background-color: navajowhite;
+}
+
+.hover-navajowhite:hover {
+  background-color: #ffdeae;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-navajowhite {
+  border-color: navajowhite;
+}
+
+.outline-navajowhite {
+  outline-color: navajowhite;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.navy {
+  color: navy;
+}
+
+.bg-navy {
+  background-color: navy;
+}
+
+.hover-navy:hover {
+  background-color: #000081;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-navy {
+  border-color: navy;
+}
+
+.outline-navy {
+  outline-color: navy;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.oldlace {
+  color: oldlace;
+}
+
+.bg-oldlace {
+  background-color: oldlace;
+}
+
+.hover-oldlace:hover {
+  background-color: #fdf5e7;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-oldlace {
+  border-color: oldlace;
+}
+
+.outline-oldlace {
+  outline-color: oldlace;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.olive {
+  color: olive;
+}
+
+.bg-olive {
+  background-color: olive;
+}
+
+.hover-olive:hover {
+  background-color: #818100;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-olive {
+  border-color: olive;
+}
+
+.outline-olive {
+  outline-color: olive;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.olivedrab {
+  color: olivedrab;
+}
+
+.bg-olivedrab {
+  background-color: olivedrab;
+}
+
+.hover-olivedrab:hover {
+  background-color: #6c8f23;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-olivedrab {
+  border-color: olivedrab;
+}
+
+.outline-olivedrab {
+  outline-color: olivedrab;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.orange {
+  color: orange;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.hover-orange:hover {
+  background-color: #ffa501;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-orange {
+  border-color: orange;
+}
+
+.outline-orange {
+  outline-color: orange;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.orangered {
+  color: orangered;
+}
+
+.bg-orangered {
+  background-color: orangered;
+}
+
+.hover-orangered:hover {
+  background-color: #ff4601;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-orangered {
+  border-color: orangered;
+}
+
+.outline-orangered {
+  outline-color: orangered;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.orchid {
+  color: orchid;
+}
+
+.bg-orchid {
+  background-color: orchid;
+}
+
+.hover-orchid:hover {
+  background-color: #da71d6;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-orchid {
+  border-color: orchid;
+}
+
+.outline-orchid {
+  outline-color: orchid;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.palegoldenrod {
+  color: palegoldenrod;
+}
+
+.bg-palegoldenrod {
+  background-color: palegoldenrod;
+}
+
+.hover-palegoldenrod:hover {
+  background-color: #eee8ab;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-palegoldenrod {
+  border-color: palegoldenrod;
+}
+
+.outline-palegoldenrod {
+  outline-color: palegoldenrod;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.palegreen {
+  color: palegreen;
+}
+
+.bg-palegreen {
+  background-color: palegreen;
+}
+
+.hover-palegreen:hover {
+  background-color: #99fb99;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-palegreen {
+  border-color: palegreen;
+}
+
+.outline-palegreen {
+  outline-color: palegreen;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.paleturquoise {
+  color: paleturquoise;
+}
+
+.bg-paleturquoise {
+  background-color: paleturquoise;
+}
+
+.hover-paleturquoise:hover {
+  background-color: #b0eeee;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-paleturquoise {
+  border-color: paleturquoise;
+}
+
+.outline-paleturquoise {
+  outline-color: paleturquoise;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.palevioletred {
+  color: palevioletred;
+}
+
+.bg-palevioletred {
+  background-color: palevioletred;
+}
+
+.hover-palevioletred:hover {
+  background-color: #db7194;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-palevioletred {
+  border-color: palevioletred;
+}
+
+.outline-palevioletred {
+  outline-color: palevioletred;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.peachpuff {
+  color: peachpuff;
+}
+
+.bg-peachpuff {
+  background-color: peachpuff;
+}
+
+.hover-peachpuff:hover {
+  background-color: #ffdbba;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-peachpuff {
+  border-color: peachpuff;
+}
+
+.outline-peachpuff {
+  outline-color: peachpuff;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.papayawhip {
+  color: papayawhip;
+}
+
+.bg-papayawhip {
+  background-color: papayawhip;
+}
+
+.hover-papayawhip:hover {
+  background-color: #ffefd6;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-papayawhip {
+  border-color: papayawhip;
+}
+
+.outline-papayawhip {
+  outline-color: papayawhip;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.peru {
+  color: peru;
+}
+
+.bg-peru {
+  background-color: peru;
+}
+
+.hover-peru:hover {
+  background-color: #cd8640;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-peru {
+  border-color: peru;
+}
+
+.outline-peru {
+  outline-color: peru;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.pink {
+  color: pink;
+}
+
+.bg-pink {
+  background-color: pink;
+}
+
+.hover-pink:hover {
+  background-color: #ffc1cc;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-pink {
+  border-color: pink;
+}
+
+.outline-pink {
+  outline-color: pink;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.plum {
+  color: plum;
+}
+
+.bg-plum {
+  background-color: plum;
+}
+
+.hover-plum:hover {
+  background-color: #dda1dd;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-plum {
+  border-color: plum;
+}
+
+.outline-plum {
+  outline-color: plum;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.powderblue {
+  color: powderblue;
+}
+
+.bg-powderblue {
+  background-color: powderblue;
+}
+
+.hover-powderblue:hover {
+  background-color: #b1e0e6;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-powderblue {
+  border-color: powderblue;
+}
+
+.outline-powderblue {
+  outline-color: powderblue;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.purple {
+  color: purple;
+}
+
+.bg-purple {
+  background-color: purple;
+}
+
+.hover-purple:hover {
+  background-color: #810081;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-purple {
+  border-color: purple;
+}
+
+.outline-purple {
+  outline-color: purple;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.rebeccapurple {
+  color: rebeccapurple;
+}
+
+.bg-rebeccapurple {
+  background-color: rebeccapurple;
+}
+
+.hover-rebeccapurple:hover {
+  background-color: #67339a;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-rebeccapurple {
+  border-color: rebeccapurple;
+}
+
+.outline-rebeccapurple {
+  outline-color: rebeccapurple;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.orangered {
+  color: orangered;
+}
+
+.bg-orangered {
+  background-color: orangered;
+}
+
+.hover-orangered:hover {
+  background-color: #ff4601;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-orangered {
+  border-color: orangered;
+}
+
+.outline-orangered {
+  outline-color: orangered;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.rosybrown {
+  color: rosybrown;
+}
+
+.bg-rosybrown {
+  background-color: rosybrown;
+}
+
+.hover-rosybrown:hover {
+  background-color: #bc9090;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-rosybrown {
+  border-color: rosybrown;
+}
+
+.outline-rosybrown {
+  outline-color: rosybrown;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.royalblue {
+  color: royalblue;
+}
+
+.bg-royalblue {
+  background-color: royalblue;
+}
+
+.hover-royalblue:hover {
+  background-color: #426ae1;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-royalblue {
+  border-color: royalblue;
+}
+
+.outline-royalblue {
+  outline-color: royalblue;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.saddlebrown {
+  color: saddlebrown;
+}
+
+.bg-saddlebrown {
+  background-color: saddlebrown;
+}
+
+.hover-saddlebrown:hover {
+  background-color: #8c4513;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-saddlebrown {
+  border-color: saddlebrown;
+}
+
+.outline-saddlebrown {
+  outline-color: saddlebrown;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.salmon {
+  color: salmon;
+}
+
+.bg-salmon {
+  background-color: salmon;
+}
+
+.hover-salmon:hover {
+  background-color: #fa8173;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-salmon {
+  border-color: salmon;
+}
+
+.outline-salmon {
+  outline-color: salmon;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.sandybrown {
+  color: sandybrown;
+}
+
+.bg-sandybrown {
+  background-color: sandybrown;
+}
+
+.hover-sandybrown:hover {
+  background-color: #f4a561;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-sandybrown {
+  border-color: sandybrown;
+}
+
+.outline-sandybrown {
+  outline-color: sandybrown;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.seagreen {
+  color: seagreen;
+}
+
+.bg-seagreen {
+  background-color: seagreen;
+}
+
+.hover-seagreen:hover {
+  background-color: #2e8c57;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-seagreen {
+  border-color: seagreen;
+}
+
+.outline-seagreen {
+  outline-color: seagreen;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.seashell {
+  color: seashell;
+}
+
+.bg-seashell {
+  background-color: seashell;
+}
+
+.hover-seashell:hover {
+  background-color: #fff6ef;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-seashell {
+  border-color: seashell;
+}
+
+.outline-seashell {
+  outline-color: seashell;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.sienna {
+  color: sienna;
+}
+
+.bg-sienna {
+  background-color: sienna;
+}
+
+.hover-sienna:hover {
+  background-color: #a1522d;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-sienna {
+  border-color: sienna;
+}
+
+.outline-sienna {
+  outline-color: sienna;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.silver {
+  color: silver;
+}
+
+.bg-silver {
+  background-color: silver;
+}
+
+.hover-silver:hover {
+  background-color: #c1c1c1;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-silver {
+  border-color: silver;
+}
+
+.outline-silver {
+  outline-color: silver;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.skyblue {
+  color: skyblue;
+}
+
+.bg-skyblue {
+  background-color: skyblue;
+}
+
+.hover-skyblue:hover {
+  background-color: #88ceeb;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-skyblue {
+  border-color: skyblue;
+}
+
+.outline-skyblue {
+  outline-color: skyblue;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.slateblue {
+  color: slateblue;
+}
+
+.bg-slateblue {
+  background-color: slateblue;
+}
+
+.hover-slateblue:hover {
+  background-color: #6b5bcd;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-slateblue {
+  border-color: slateblue;
+}
+
+.outline-slateblue {
+  outline-color: slateblue;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.slategray {
+  color: slategray;
+}
+
+.bg-slategray {
+  background-color: slategray;
+}
+
+.hover-slategray:hover {
+  background-color: #718190;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-slategray {
+  border-color: slategray;
+}
+
+.outline-slategray {
+  outline-color: slategray;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.slategrey {
+  color: slategrey;
+}
+
+.bg-slategrey {
+  background-color: slategrey;
+}
+
+.hover-slategrey:hover {
+  background-color: #718190;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-slategrey {
+  border-color: slategrey;
+}
+
+.outline-slategrey {
+  outline-color: slategrey;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.snow {
+  color: snow;
+}
+
+.bg-snow {
+  background-color: snow;
+}
+
+.hover-snow:hover {
+  background-color: #fffbfb;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-snow {
+  border-color: snow;
+}
+
+.outline-snow {
+  outline-color: snow;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.springgreen {
+  color: springgreen;
+}
+
+.bg-springgreen {
+  background-color: springgreen;
+}
+
+.hover-springgreen:hover {
+  background-color: #01ff80;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-springgreen {
+  border-color: springgreen;
+}
+
+.outline-springgreen {
+  outline-color: springgreen;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.steelblue {
+  color: steelblue;
+}
+
+.bg-steelblue {
+  background-color: steelblue;
+}
+
+.hover-steelblue:hover {
+  background-color: #4683b5;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-steelblue {
+  border-color: steelblue;
+}
+
+.outline-steelblue {
+  outline-color: steelblue;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.tan {
+  color: tan;
+}
+
+.bg-tan {
+  background-color: tan;
+}
+
+.hover-tan:hover {
+  background-color: #d2b48d;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-tan {
+  border-color: tan;
+}
+
+.outline-tan {
+  outline-color: tan;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.teal {
+  color: teal;
+}
+
+.bg-teal {
+  background-color: teal;
+}
+
+.hover-teal:hover {
+  background-color: #008181;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-teal {
+  border-color: teal;
+}
+
+.outline-teal {
+  outline-color: teal;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.thistle {
+  color: thistle;
+}
+
+.bg-thistle {
+  background-color: thistle;
+}
+
+.hover-thistle:hover {
+  background-color: #d8c0d8;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-thistle {
+  border-color: thistle;
+}
+
+.outline-thistle {
+  outline-color: thistle;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.tomato {
+  color: tomato;
+}
+
+.bg-tomato {
+  background-color: tomato;
+}
+
+.hover-tomato:hover {
+  background-color: #ff6448;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-tomato {
+  border-color: tomato;
+}
+
+.outline-tomato {
+  outline-color: tomato;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.turquoise {
+  color: turquoise;
+}
+
+.bg-turquoise {
+  background-color: turquoise;
+}
+
+.hover-turquoise:hover {
+  background-color: #41e0d0;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-turquoise {
+  border-color: turquoise;
+}
+
+.outline-turquoise {
+  outline-color: turquoise;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.violet {
+  color: violet;
+}
+
+.bg-violet {
+  background-color: violet;
+}
+
+.hover-violet:hover {
+  background-color: #ee83ee;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-violet {
+  border-color: violet;
+}
+
+.outline-violet {
+  outline-color: violet;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.whitesmoke {
+  color: whitesmoke;
+}
+
+.bg-whitesmoke {
+  background-color: whitesmoke;
+}
+
+.hover-whitesmoke:hover {
+  background-color: #f6f6f6;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-whitesmoke {
+  border-color: whitesmoke;
+}
+
+.outline-whitesmoke {
+  outline-color: whitesmoke;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.white {
+  color: white;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.hover-white:hover {
+  background-color: white;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-white {
+  border-color: white;
+}
+
+.outline-white {
+  outline-color: white;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.wheat {
+  color: wheat;
+}
+
+.bg-wheat {
+  background-color: wheat;
+}
+
+.hover-wheat:hover {
+  background-color: #f5deb4;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-wheat {
+  border-color: wheat;
+}
+
+.outline-wheat {
+  outline-color: wheat;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.hover-yellow:hover {
+  background-color: #ffff01;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-yellow {
+  border-color: yellow;
+}
+
+.outline-yellow {
+  outline-color: yellow;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+.yellowgreen {
+  color: yellowgreen;
+}
+
+.bg-yellowgreen {
+  background-color: yellowgreen;
+}
+
+.hover-yellowgreen:hover {
+  background-color: #9acd33;
+  color: white;
+  opacity: 0.6;
+}
+
+.border-yellowgreen {
+  border-color: yellowgreen;
+}
+
+.outline-yellowgreen {
+  outline-color: yellowgreen;
+}
+
+::selection {
+  background-color: crimson;
+  color: whitesmoke;
+}
+
+table {
+  margin: auto;
+  margin-block: 1px solid black;
+}
+
+table,
+thead,
+th,
+tr,
+td {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px 24px;
+}
+
+thead tr {
+  background-color: transparent !important;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+@media only screen and (max-width: 575px) {
+  .btn,
+button {
+    padding: 8px 16px;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .btn,
+button {
+    padding: 12px 16px;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .flx > .col {
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .flx > .col {
+    max-width: 12.5%;
+    flex-basis: 12.5%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .flx > .col {
+    max-width: 8.33%;
+    flex-basis: 8.33%;
+  }
+}
+button:disabled {
+  background-color: lightgrey;
+  color: darkgray;
+  border: none;
+  box-shadow: none;
+}
+
+input[type=submit] {
+  box-shadow: none;
+  cursor: pointer;
+}
+
+/* input {
+  border: none;
+} */
+
