@@ -7,6 +7,9 @@
   display: flex;
   box-sizing: border-box;
 }
+.block{
+  display:block;
+}
 .wrap{
     flex-wrap: wrap;
 
@@ -1282,10 +1285,7 @@ abbr {
   outline-color: aqua;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .aquamarine {
   color: aquamarine;
@@ -1309,10 +1309,7 @@ abbr {
   outline-color: aquamarine;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .azure {
   color: azure;
@@ -1336,10 +1333,7 @@ abbr {
   outline-color: azure;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .beige {
   color: beige;
@@ -1363,10 +1357,7 @@ abbr {
   outline-color: beige;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .bisque {
   color: bisque;
@@ -1390,10 +1381,7 @@ abbr {
   outline-color: bisque;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .black {
   color: black;
@@ -1417,10 +1405,7 @@ abbr {
   outline-color: black;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .blanchedalmond {
   color: blanchedalmond;
@@ -1444,10 +1429,7 @@ abbr {
   outline-color: blanchedalmond;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .blue {
   color: blue;
@@ -1471,10 +1453,7 @@ abbr {
   outline-color: blue;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .blueviolet {
   color: blueviolet;
@@ -1498,10 +1477,7 @@ abbr {
   outline-color: blueviolet;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .brown {
   color: brown;
@@ -1525,10 +1501,7 @@ abbr {
   outline-color: brown;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .burlywood {
   color: burlywood;
@@ -1552,10 +1525,7 @@ abbr {
   outline-color: burlywood;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .cadetblue {
   color: cadetblue;
@@ -1579,10 +1549,7 @@ abbr {
   outline-color: cadetblue;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .chartreuse {
   color: chartreuse;
@@ -1606,10 +1573,7 @@ abbr {
   outline-color: chartreuse;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .chocolate {
   color: chocolate;
@@ -1633,10 +1597,7 @@ abbr {
   outline-color: chocolate;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .coral {
   color: coral;
@@ -1660,10 +1621,7 @@ abbr {
   outline-color: coral;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .cornflowerblue {
   color: cornflowerblue;
@@ -1687,10 +1645,7 @@ abbr {
   outline-color: cornflowerblue;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .cornsilk {
   color: cornsilk;
@@ -1714,10 +1669,7 @@ abbr {
   outline-color: cornsilk;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .crimson {
   color: crimson;
@@ -1741,10 +1693,7 @@ abbr {
   outline-color: crimson;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .cyan {
   color: cyan;
@@ -1768,10 +1717,7 @@ abbr {
   outline-color: cyan;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .darkblue {
   color: darkblue;
@@ -1795,10 +1741,7 @@ abbr {
   outline-color: darkblue;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .darkcyan {
   color: darkcyan;
@@ -1822,10 +1765,7 @@ abbr {
   outline-color: darkcyan;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .darkgoldenrod {
   color: darkgoldenrod;
@@ -1849,10 +1789,7 @@ abbr {
   outline-color: darkgoldenrod;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .darkgray {
   color: darkgray;
@@ -1876,10 +1813,7 @@ abbr {
   outline-color: darkgray;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .darkgreen {
   color: darkgreen;
@@ -1903,10 +1837,7 @@ abbr {
   outline-color: darkgreen;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .darkgrey {
   color: darkgrey;
@@ -1930,10 +1861,7 @@ abbr {
   outline-color: darkgrey;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .darkkhaki {
   color: darkkhaki;
@@ -1957,10 +1885,7 @@ abbr {
   outline-color: darkkhaki;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .darkmagenta {
   color: darkmagenta;
@@ -1984,10 +1909,7 @@ abbr {
   outline-color: darkmagenta;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .darkolivegreen {
   color: darkolivegreen;
@@ -2011,10 +1933,7 @@ abbr {
   outline-color: darkolivegreen;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .darkorange {
   color: darkorange;
@@ -2038,10 +1957,7 @@ abbr {
   outline-color: darkorange;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .darkorchid {
   color: darkorchid;
@@ -2065,10 +1981,7 @@ abbr {
   outline-color: darkorchid;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .darkred {
   color: darkred;
@@ -2092,10 +2005,7 @@ abbr {
   outline-color: darkred;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .darksalmon {
   color: darksalmon;
@@ -2119,10 +2029,7 @@ abbr {
   outline-color: darksalmon;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .darkseagreen {
   color: darkseagreen;
@@ -2146,10 +2053,7 @@ abbr {
   outline-color: darkseagreen;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .darkslateblue {
   color: darkslateblue;
@@ -2173,10 +2077,7 @@ abbr {
   outline-color: darkslateblue;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .darkslategray {
   color: darkslategray;
@@ -2200,10 +2101,7 @@ abbr {
   outline-color: darkslategray;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .darkturquoise {
   color: darkturquoise;
@@ -2227,10 +2125,7 @@ abbr {
   outline-color: darkturquoise;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .darkviolet {
   color: darkviolet;
@@ -2254,10 +2149,7 @@ abbr {
   outline-color: darkviolet;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .deeppink {
   color: deeppink;
@@ -2281,10 +2173,7 @@ abbr {
   outline-color: deeppink;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .deepskyblue {
   color: deepskyblue;
@@ -2308,10 +2197,7 @@ abbr {
   outline-color: deepskyblue;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .dimgray {
   color: dimgray;
@@ -2335,10 +2221,7 @@ abbr {
   outline-color: dimgray;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .dimgrey {
   color: dimgrey;
@@ -2362,10 +2245,7 @@ abbr {
   outline-color: dimgrey;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .dodgerblue {
   color: dodgerblue;
@@ -2389,10 +2269,7 @@ abbr {
   outline-color: dodgerblue;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .firebrick {
   color: firebrick;
@@ -2416,10 +2293,7 @@ abbr {
   outline-color: firebrick;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .floralwhite {
   color: floralwhite;
@@ -2443,10 +2317,7 @@ abbr {
   outline-color: floralwhite;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .forestgreen {
   color: forestgreen;
@@ -2470,10 +2341,7 @@ abbr {
   outline-color: forestgreen;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .fuchsia {
   color: fuchsia;
@@ -2497,10 +2365,7 @@ abbr {
   outline-color: fuchsia;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .gainsboro {
   color: gainsboro;
@@ -2524,10 +2389,7 @@ abbr {
   outline-color: gainsboro;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .ghostwhite {
   color: ghostwhite;
@@ -2551,10 +2413,7 @@ abbr {
   outline-color: ghostwhite;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .gold {
   color: gold;
@@ -2578,10 +2437,7 @@ abbr {
   outline-color: gold;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .goldenrod {
   color: goldenrod;
@@ -2605,10 +2461,7 @@ abbr {
   outline-color: goldenrod;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .gray {
   color: gray;
@@ -2632,10 +2485,7 @@ abbr {
   outline-color: gray;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .grey {
   color: grey;
@@ -2659,10 +2509,7 @@ abbr {
   outline-color: grey;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .green {
   color: green;
@@ -2686,10 +2533,7 @@ abbr {
   outline-color: green;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .greenyellow {
   color: greenyellow;
@@ -2713,10 +2557,7 @@ abbr {
   outline-color: greenyellow;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .honeydew {
   color: honeydew;
@@ -2740,10 +2581,7 @@ abbr {
   outline-color: honeydew;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .hotpink {
   color: hotpink;
@@ -2767,10 +2605,7 @@ abbr {
   outline-color: hotpink;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .indianred {
   color: indianred;
@@ -2794,10 +2629,7 @@ abbr {
   outline-color: indianred;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .indigo {
   color: indigo;
@@ -2821,10 +2653,7 @@ abbr {
   outline-color: indigo;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .ivory {
   color: ivory;
@@ -2848,10 +2677,7 @@ abbr {
   outline-color: ivory;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .khaki {
   color: khaki;
@@ -2875,10 +2701,7 @@ abbr {
   outline-color: khaki;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lavender {
   color: lavender;
@@ -2902,10 +2725,7 @@ abbr {
   outline-color: lavender;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lavenderblush {
   color: lavenderblush;
@@ -2929,10 +2749,7 @@ abbr {
   outline-color: lavenderblush;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lawngreen {
   color: lawngreen;
@@ -2956,10 +2773,7 @@ abbr {
   outline-color: lawngreen;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lemonchiffon {
   color: lemonchiffon;
@@ -2983,10 +2797,7 @@ abbr {
   outline-color: lemonchiffon;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lightblue {
   color: lightblue;
@@ -3010,10 +2821,7 @@ abbr {
   outline-color: lightblue;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lightcoral {
   color: lightcoral;
@@ -3037,10 +2845,7 @@ abbr {
   outline-color: lightcoral;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lightcyan {
   color: lightcyan;
@@ -3064,10 +2869,7 @@ abbr {
   outline-color: lightcyan;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lightgoldenrodyellow {
   color: lightgoldenrodyellow;
@@ -3091,10 +2893,7 @@ abbr {
   outline-color: lightgoldenrodyellow;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lightgray {
   color: lightgray;
@@ -3118,10 +2917,7 @@ abbr {
   outline-color: lightgray;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lightgrey {
   color: lightgrey;
@@ -3145,10 +2941,7 @@ abbr {
   outline-color: lightgrey;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lightgreen {
   color: lightgreen;
@@ -3172,10 +2965,7 @@ abbr {
   outline-color: lightgreen;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lightpink {
   color: lightpink;
@@ -3199,10 +2989,7 @@ abbr {
   outline-color: lightpink;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lightsalmon {
   color: lightsalmon;
@@ -3226,10 +3013,7 @@ abbr {
   outline-color: lightsalmon;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lightseagreen {
   color: lightseagreen;
@@ -3253,10 +3037,7 @@ abbr {
   outline-color: lightseagreen;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lightskyblue {
   color: lightskyblue;
@@ -3280,10 +3061,7 @@ abbr {
   outline-color: lightskyblue;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lightslategray {
   color: lightslategray;
@@ -3307,10 +3085,7 @@ abbr {
   outline-color: lightslategray;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lightslategrey {
   color: lightslategrey;
@@ -3334,10 +3109,7 @@ abbr {
   outline-color: lightslategrey;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lightsteelblue {
   color: lightsteelblue;
@@ -3361,10 +3133,7 @@ abbr {
   outline-color: lightsteelblue;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lightyellow {
   color: lightyellow;
@@ -3388,10 +3157,7 @@ abbr {
   outline-color: lightyellow;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .lime {
   color: lime;
@@ -3415,10 +3181,7 @@ abbr {
   outline-color: lime;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .limegreen {
   color: limegreen;
@@ -3442,10 +3205,7 @@ abbr {
   outline-color: limegreen;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .linen {
   color: linen;
@@ -3469,10 +3229,7 @@ abbr {
   outline-color: linen;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .magenta {
   color: magenta;
@@ -3496,10 +3253,7 @@ abbr {
   outline-color: magenta;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .maroon {
   color: maroon;
@@ -3523,10 +3277,7 @@ abbr {
   outline-color: maroon;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .mediumaquamarine {
   color: mediumaquamarine;
@@ -3550,10 +3301,7 @@ abbr {
   outline-color: mediumaquamarine;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .mediumblue {
   color: mediumblue;
@@ -3577,10 +3325,7 @@ abbr {
   outline-color: mediumblue;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .mediumorchid {
   color: mediumorchid;
@@ -3604,10 +3349,7 @@ abbr {
   outline-color: mediumorchid;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .mediumpurple {
   color: mediumpurple;
@@ -3631,10 +3373,7 @@ abbr {
   outline-color: mediumpurple;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .mediumseagreen {
   color: mediumseagreen;
@@ -3658,10 +3397,7 @@ abbr {
   outline-color: mediumseagreen;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .mediumslateblue {
   color: mediumslateblue;
@@ -3685,10 +3421,7 @@ abbr {
   outline-color: mediumslateblue;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .mediumspringgreen {
   color: mediumspringgreen;
@@ -3712,10 +3445,7 @@ abbr {
   outline-color: mediumspringgreen;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .mediumturquoise {
   color: mediumturquoise;
@@ -3739,10 +3469,7 @@ abbr {
   outline-color: mediumturquoise;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .mediumvioletred {
   color: mediumvioletred;
@@ -3766,10 +3493,7 @@ abbr {
   outline-color: mediumvioletred;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .midnightblue {
   color: midnightblue;
@@ -3793,10 +3517,7 @@ abbr {
   outline-color: midnightblue;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .mintcream {
   color: mintcream;
@@ -3820,10 +3541,7 @@ abbr {
   outline-color: mintcream;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .mistyrose {
   color: mistyrose;
@@ -3847,10 +3565,7 @@ abbr {
   outline-color: mistyrose;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .moccasin {
   color: moccasin;
@@ -3874,10 +3589,7 @@ abbr {
   outline-color: moccasin;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .navajowhite {
   color: navajowhite;
@@ -3901,10 +3613,7 @@ abbr {
   outline-color: navajowhite;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .navy {
   color: navy;
@@ -3928,10 +3637,7 @@ abbr {
   outline-color: navy;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .oldlace {
   color: oldlace;
@@ -3955,10 +3661,7 @@ abbr {
   outline-color: oldlace;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .olive {
   color: olive;
@@ -3982,10 +3685,7 @@ abbr {
   outline-color: olive;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .olivedrab {
   color: olivedrab;
@@ -4009,10 +3709,7 @@ abbr {
   outline-color: olivedrab;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .orange {
   color: orange;
@@ -4036,10 +3733,7 @@ abbr {
   outline-color: orange;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .orangered {
   color: orangered;
@@ -4063,10 +3757,7 @@ abbr {
   outline-color: orangered;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .orchid {
   color: orchid;
@@ -4090,10 +3781,7 @@ abbr {
   outline-color: orchid;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .palegoldenrod {
   color: palegoldenrod;
@@ -4117,10 +3805,7 @@ abbr {
   outline-color: palegoldenrod;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .palegreen {
   color: palegreen;
@@ -4144,10 +3829,7 @@ abbr {
   outline-color: palegreen;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .paleturquoise {
   color: paleturquoise;
@@ -4171,10 +3853,7 @@ abbr {
   outline-color: paleturquoise;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .palevioletred {
   color: palevioletred;
@@ -4198,10 +3877,7 @@ abbr {
   outline-color: palevioletred;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .peachpuff {
   color: peachpuff;
@@ -4225,10 +3901,7 @@ abbr {
   outline-color: peachpuff;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .papayawhip {
   color: papayawhip;
@@ -4252,10 +3925,7 @@ abbr {
   outline-color: papayawhip;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .peru {
   color: peru;
@@ -4279,10 +3949,7 @@ abbr {
   outline-color: peru;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .pink {
   color: pink;
@@ -4306,10 +3973,7 @@ abbr {
   outline-color: pink;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .plum {
   color: plum;
@@ -4333,10 +3997,7 @@ abbr {
   outline-color: plum;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .powderblue {
   color: powderblue;
@@ -4360,10 +4021,7 @@ abbr {
   outline-color: powderblue;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .purple {
   color: purple;
@@ -4387,10 +4045,7 @@ abbr {
   outline-color: purple;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .rebeccapurple {
   color: rebeccapurple;
@@ -4414,10 +4069,7 @@ abbr {
   outline-color: rebeccapurple;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .orangered {
   color: orangered;
@@ -4441,10 +4093,7 @@ abbr {
   outline-color: orangered;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .rosybrown {
   color: rosybrown;
@@ -4468,10 +4117,7 @@ abbr {
   outline-color: rosybrown;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .royalblue {
   color: royalblue;
@@ -4495,10 +4141,7 @@ abbr {
   outline-color: royalblue;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .saddlebrown {
   color: saddlebrown;
@@ -4522,10 +4165,7 @@ abbr {
   outline-color: saddlebrown;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .salmon {
   color: salmon;
@@ -4549,10 +4189,7 @@ abbr {
   outline-color: salmon;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .sandybrown {
   color: sandybrown;
@@ -4576,10 +4213,7 @@ abbr {
   outline-color: sandybrown;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .seagreen {
   color: seagreen;
@@ -4603,10 +4237,7 @@ abbr {
   outline-color: seagreen;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .seashell {
   color: seashell;
@@ -4630,10 +4261,7 @@ abbr {
   outline-color: seashell;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .sienna {
   color: sienna;
@@ -4657,10 +4285,7 @@ abbr {
   outline-color: sienna;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .silver {
   color: silver;
@@ -4684,10 +4309,7 @@ abbr {
   outline-color: silver;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .skyblue {
   color: skyblue;
@@ -4711,10 +4333,7 @@ abbr {
   outline-color: skyblue;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .slateblue {
   color: slateblue;
@@ -4738,10 +4357,7 @@ abbr {
   outline-color: slateblue;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .slategray {
   color: slategray;
@@ -4765,10 +4381,7 @@ abbr {
   outline-color: slategray;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .slategrey {
   color: slategrey;
@@ -4792,10 +4405,7 @@ abbr {
   outline-color: slategrey;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .snow {
   color: snow;
@@ -4819,10 +4429,7 @@ abbr {
   outline-color: snow;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .springgreen {
   color: springgreen;
@@ -4846,10 +4453,7 @@ abbr {
   outline-color: springgreen;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .steelblue {
   color: steelblue;
@@ -4873,10 +4477,7 @@ abbr {
   outline-color: steelblue;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .tan {
   color: tan;
@@ -4900,10 +4501,7 @@ abbr {
   outline-color: tan;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .teal {
   color: teal;
@@ -4927,10 +4525,7 @@ abbr {
   outline-color: teal;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .thistle {
   color: thistle;
@@ -4954,10 +4549,7 @@ abbr {
   outline-color: thistle;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .tomato {
   color: tomato;
@@ -4981,10 +4573,7 @@ abbr {
   outline-color: tomato;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .turquoise {
   color: turquoise;
@@ -5008,10 +4597,7 @@ abbr {
   outline-color: turquoise;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .violet {
   color: violet;
@@ -5035,10 +4621,7 @@ abbr {
   outline-color: violet;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .whitesmoke {
   color: whitesmoke;
@@ -5062,10 +4645,7 @@ abbr {
   outline-color: whitesmoke;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .white {
   color: white;
@@ -5089,10 +4669,7 @@ abbr {
   outline-color: white;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .wheat {
   color: wheat;
@@ -5116,10 +4693,7 @@ abbr {
   outline-color: wheat;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .yellow {
   color: yellow;
@@ -5143,10 +4717,7 @@ abbr {
   outline-color: yellow;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 .yellowgreen {
   color: yellowgreen;
@@ -5170,10 +4741,7 @@ abbr {
   outline-color: yellowgreen;
 }
 
-::selection {
-  background-color: crimson;
-  color: whitesmoke;
-}
+ 
 
 table {
   margin: auto;
