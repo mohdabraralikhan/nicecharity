@@ -23,7 +23,7 @@ export class LoginComponent {
         (data) => {
           // Handle successful login (redirect to a secured page)
           console.log("Login successful:", data);
-          window.location.href = "/home"; // Example redirect on success (replace with your desired path)
+          // window.location.href = ""; 
         },
         (error) => {
           this.errorMessage = 'Invalid email or password.'; // Example error message
